@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reveal.css">
+    
+    <script defer src="render.js"></script>
+  </head>
+  <body>
+
+    <h1 class="block-effect" style="--td: 0.5s">
+      <div class="block-reveal" style="--bc: #b642f5; --d: .1s">Random</div>
+      <div class="block-reveal" style="--bc: #e342f5; --d: .5s">Number</div>
+    </h1>
+
+    <h6 id="promptLbl" class="title is-6" style="visibility: hidden; color: red;">You must fill all the required fields</h6>
+
+    <center>
+    <div class="wrapper">
+      <input class="input is-small" style="text-align: center; margin-top: 5px;" type="text" id="fromTxt" placeholder="From" />
+      <input class="input is-small" style="text-align: center; margin-top: 12px; margin-bottom: 15px;" type="text" id="toTxt" placeholder="To" />
+    </div>
+
+    <div><button id="randomBtn" class="button is-primary">Generate</button>
+    <p>
+      <h5 id="numberTag" class="title is-5"></h5>
+  </div>
+
+  </center>
+  </body>
+</html>
